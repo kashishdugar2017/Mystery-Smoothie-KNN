@@ -1,4 +1,4 @@
 from KNN import *
 
-print(total/3)
+print(round(total/3, 2))
 print(chosen)
