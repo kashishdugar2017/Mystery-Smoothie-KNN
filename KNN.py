@@ -2,6 +2,7 @@ from ratings import *
 
 chosen = []
 total = 0
+k = 3
 
 def distance(a, b):
     across = ratings[a]["chocolate"] - ratings[b]["chocolate"]
@@ -18,7 +19,7 @@ def find_closest():
                 closest = name
     return closest
 
-for _ in range(3):
+for _ in range(k):
     freind = find_closest()
     chosen.append(freind)
 
